@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Registartion Form</title>
+    <link href="styles.css" rel="stylesheet"/>
+    </head>
+<body>
+  <form id="survey-form">
+    <h1 id="title">Register Now</h1>
+    <p id="description">Fill in the form below to create your account for the survey.</p>
+
+    <label id="name-label" for="name">Name *</label>
+    <input type="text" id="name" name="name" placeholder=" Enter Your Full Name" required />
+
+    <label id="email-label" for="email">Email *</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email (you@email.com)" required />
+
+    <label id="number-label" for="number">Age (13-120) *</label>
+    <input type="number" id="number" name="age" min="13" max="120" placeholder=" Enter Your age" required />
+
+    <label for="dropdown">Select your role *</label>
+    <select id="dropdown" name="role" required>
+      <option value="">Choose an option</option>
+      <option value="student">Student</option>
+      <option value="professional">Professional</option>
+      <option value="other">Other</option>
+    </select>
+
+    <div class="radio-group">
+      <label>Would you recommend us?</label><br />
+      <label><input type="radio" name="recommend" value="yes" required /> Yes</label>
+      <label><input type="radio" name="recommend" value="no" /> No</label>
+    </div>
+
+    <div class="checkbox-group">
+      <label>Features you use (select all that apply):</label><br />
+      <label><input type="checkbox" name="features" value="chat" /> Chat</label>
+      <label><input type="checkbox" name="features" value="video" /> Video</label>
+      <label><input type="checkbox" name="features" value="forum" /> Forum</label>
+      <label><input type="checkbox" name="features" value="resources" /> Resources</label>
+    </div>
+
+    <label for="comments">Any Other Infromation</label>
+    <textarea id="comments" name="comments" placeholder="Enter here"></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
+
